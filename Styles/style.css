@@ -1,0 +1,182 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+}
+
+#header {
+    display: flex;
+    height: 100px;
+    background-color: #005B99;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+    margin: 0;
+}
+
+.menuNav li a {
+       text-decoration: none;
+       color: whitesmoke;
+       font-weight: 700;
+       font-size: 20px;
+       margin-right: 40px;
+}
+
+.menuNav li{
+    list-style: none;
+    display: inline-block;
+    padding: 0px 10px;
+}
+
+.menuNav a:hover {
+    color: #FFD700;
+}
+
+#logoTop img {
+    height: 100px;
+    justify-content: space-between;
+    margin-left: 40px;
+}
+
+#homeIndex {
+    background-color: #f5f5f5;
+    height: 400px;
+    margin: 0;
+    text-align: center;
+}
+
+#homeIndex .tituloIndex {
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding-top: 50px;
+    font-size: 70px;
+}
+
+#homeIndex p {
+    text-align: center;
+    font-size: 30px;
+}
+
+#homeIndex .button {
+    background-color: #FFD700;
+    border: none;
+    color: whitesmoke;
+    padding: 20px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 12px;
+    box-shadow: 0 10px 10px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+  
+#ventajaCopy {
+    background-color: #5c5c5c;
+    justify-content: space-between;
+    display: flex;
+  }
+
+.tituloDos {
+    text-align: center;
+    background-color: #FFD700;
+    margin: 0;
+    padding: 5px 5px 5px 5px;
+    font-size: 30px;
+  }
+
+#ventajaCopy .imagenIndexDos img {
+  padding: 10px;
+  width: 400px;
+  margin-left: 200px;
+  padding: 25px;
+  }
+
+#ventajaCopy .textoWhy p {
+    text-align: center;
+    color: #f7f6f6;
+    margin-right: 200px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.tituloTres {
+    text-align: center;
+    background-color: #FFD700;
+    margin: 0;
+    padding: 5px 5px 5px 5px;
+    font-size: 30px;
+}
+
+#serviciosHome {
+    background-color: #f5f5f5;
+}
+
+#serviciosHome .tablaHome {
+    margin-left: 250px;
+    margin-right: 250px;
+    text-align: center;
+    padding: 30px;
+}
+
+#serviciosHome .tablaHome th {
+    padding: 20px;
+}
+
+#serviciosHome a {
+    background-color: #FFD700; /* Green */
+    border: none;
+    color: whitesmoke;
+    padding: 20px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 12px;
+    box-shadow: 0 10px 10px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.tituloCuatro {
+    text-align: center;
+    background-color: #FFD700;
+    margin: 0;
+    padding: 5px 5px 5px 5px;
+    font-size: 30px;
+}
+
+#clientesHome {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f5f5f5;
+}
+
+#clientesHome img {
+    display: inline-block;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding: 25px;
+    height: 80px;
+}
+
+.tituloCinco {
+    text-align: center;
+    background-color: #FFD700;
+    margin: 0;
+    padding: 5px 5px 5px 5px;
+    font-size: 30px;
+}
+
+#footerHome {
+    display: block;
+    height: auto;
+    background-color: #005B99;
+    padding: 20px;
+    margin: 0;
+}
+
+#footerHome .redesSocial a {
+    text-align: center;
+
+}
