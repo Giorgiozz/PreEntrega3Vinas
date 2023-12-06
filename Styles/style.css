@@ -1,46 +1,8 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 
 body {
     font-family: 'Raleway', sans-serif;
@@ -55,6 +17,16 @@ body {
     padding: 20px;
     margin: 0px 0px;
     font-size: 30px;
+}
+
+.menuNav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.menuNav ul {
+    margin: 0;
 }
 
 .menuNav li a {
@@ -118,10 +90,40 @@ body {
   }
   
 #ventajaCopy {
-    background-color: #5c5c5c;
-    justify-content: space-between;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #5c5c5c;
   }
+  @media screen and (max-width: 768px) {
+    #ventajaCopy {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .imagenIndexDos,
+    .textoWhy {
+        width: 100%;
+    }
+}
+
+
+.imagenIndexDos img {
+    max-width: 100%;
+    height: auto;
+}
+
+.imagenIndexDos {
+    flex: 1;
+  }
+
+
+.textoWhy{
+    flex: 1;
+  }
+
 
 .tituloDos {
     text-align: center;
@@ -133,15 +135,13 @@ body {
 
 #ventajaCopy .imagenIndexDos img {
   padding: 10px;
-  width: 400px;
-  margin-left: 200px;
+  width: 600px;
   padding: 25px;
   }
 
 #ventajaCopy .textoWhy p {
     text-align: center;
     color: #f7f6f6;
-    margin-right: 200px;
     margin-top: 25px;
     margin-bottom: 25px;
 }
@@ -216,15 +216,104 @@ body {
 }
 
 #footerHome {
-    display: block;
-    height: auto;
     background-color: #005B99;
     padding: 20px;
+    text-align: center;
+}
+
+.navFooter ul {
+    list-style-type: none;
+    padding: 0;
     margin: 0;
 }
 
-#footerHome .redesSocial a {
-    text-align: center;
-
+.navFooter ul li {
+    display: inline-block;
+    margin-right: 20px;
 }
 
+.navFooter a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.navFooter a:hover {
+    color: #FFD700;
+}
+
+.redesSocia {
+    margin-top: 10px;
+}
+
+.redesSocia a {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.redesSocia img {
+    width: 30px;
+    height: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .navFooter ul {
+        text-align: center;
+    }
+
+    .navFooter ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .redesSocia a {
+        display: block;
+        margin: 10px auto;
+    }
+
+    .redesSocia img {
+        width: 20px;
+    }
+}
+
+#contactoHome p {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.menuHambur, .menuInput {
+    visibility: hidden;
+}
+
+@media (max-width: 768px) {
+    .menuHambur{
+        visibility: visible;
+        cursor: pointer;
+    }
+
+    .menuNav {
+        position: fixed;
+        top: 140px;
+        bottom: 0px;
+        background-color: #FFD700;
+        width: 100%;
+        left: 0;
+        display: flex;
+        justify-content: space-evenly;        
+        align-items: center;
+        font-size: 30px;
+        clip-path: circle(0 at center);
+        transition: clip-path 1s ease-out;
+    }
+
+    .menuNav ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menuInput:checked + .menuNav{
+        clip-path: circle(100% at center);
+    }
+}
