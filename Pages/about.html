@@ -9,16 +9,25 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 <body>
     <header id="header">
         <div id="logoTop">
-            <a href="../index.html">
+            <a href = "../index.html">
             <img src="../IMGS/logoprmpt.png" alt="logo sitio">
             </a>
         </div>
+    <div id="navIMG">
+      <label for="menuHamNav" class="menuHambur">
+          <img src="../IMGS/menu.svg" alt="iconoHamburguesa">
+      </label>
+    </div>
+      <input type="checkbox" id="menuHamNav" class="menuInput">
       <nav class="menuNav"> 
-        <ul> 
+        <div>
+          <ul> 
             <li>
                 <a href="./portfolio.html">PORTFOLIO</a>
             </li>
@@ -31,108 +40,144 @@
             <li>
                 <a href="./contacto.html">CONTACTO</a>
             </li>
-        </ul>
+          </ul>
+        </div>
       </nav>
     </header>
 <main>
-    <h1>Conoce al Copy</h1>
-     <p>
-         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab reiciendis sint qui animi laudantium itaque velit aut!
-    </p>
+    <h1 class="tituloDos">Conoce al Copy</h1>
+    <section id="ventajaCopy">
+        <div class="imagenIndexDos">
+            <img src="../IMGS/conocecopy.jpg" alt="prompt">
+        </div>
+        <div class="textoWhy">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque fugiat architecto nisi fuga facilis ea tenetur ratione doloribus natus veritatis numquam adipisci incidunt ipsum optio reiciendis voluptatem, modi consequatur mollitia quos itaque dignissimos magnam quam odit? In velit aliquid nulla laboriosam numquam et dignissimos, provident id facilis, blanditiis perferendis ipsa.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae magni earum possimus error itaque recusandae rerum cumque fuga reprehenderit dolorum. Aperiam, velit sunt! Architecto similique, molestiae velit possimus expedita perspiciatis.</p>
+        </div>
+    </section>
 </main>  
 <div>
-    <img src="#" alt="fotoCopy">
+    <h2 class="tituloDos">Nuestros valores</h2>
 </div>
-<div>
-    <h2>Nuestros valores</h2>
-</div>
-<section>
-    <div>
-        <table>
-            <tr>
-                <th>Valor 1</th>
-                <th>Valor 2</th>
-                <th>Valor 3</th>
-            </tr>
-            <tr>
-                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quae labore, debitis exercitationem aliquid iste?</td>
-                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quae labore, debitis exercitationem aliquid iste?</td>
-                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quae labore, debitis exercitationem aliquid iste?</td>
-        </table>
+<div class="container px-4 py-5" id="hanging-icons">
+    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+      <div class="col d-flex align-items-start">
+        <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+          <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"></use></svg>
+        </div>
+        <div>
+          <h3 class="fs-2 text-body-emphasis">Featured title</h3>
+          <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+          <a href="#" class="btn btn-primary">
+            Primary button
+          </a>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+          <svg class="bi" width="1em" height="1em"><use xlink:href="#cpu-fill"></use></svg>
+        </div>
+        <div>
+          <h3 class="fs-2 text-body-emphasis">Featured title</h3>
+          <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+          <a href="#" class="btn btn-primary">
+            Primary button
+          </a>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+          <svg class="bi" width="1em" height="1em"><use xlink:href="#tools"></use></svg>
+        </div>
+        <div>
+          <h3 class="fs-2 text-body-emphasis">Featured title</h3>
+          <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+          <a href="#" class="btn btn-primary">
+            Primary button
+          </a>
+        </div>
+      </div>
     </div>
-</section>
+  </div>
 <div>
-    <h2>CTA - Trabajemos juntos</h2>
+<h2 class="tituloDos">Trabajemos juntos</h2>
 </div>
-<section>
+<section id="contactoHome">
     <div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat voluptatem repudiandae, ea laudantium harum officia vitae nobis dolorem est? Impedit officia fugiat, repellat praesentium soluta velit numquam provident labore vel.</p>
+        <p>¡Comparte tus datos con nosotros! Nos pondemos en contacto contigo a la brevedad posible</p>
     </div>
-</section>
-<div>
-<h2>Contactanos</h2>
-</div>
-<section>
-    <form>
-        <input type="text" placeholder="Nombre"/>
-        <input type="email" placeholder="email@server.com" name="email"/>
-        <label for="servicioQ">
-            Que servicio te interesa:
-            <select name="servicioQ" id="servicioQ">
-                <option value="webCopy">Web Copywriting</option>
-                <option value="socialMedia">Social Media Copy</option>
-                <option value="emailCopy">Email Marketing Copy</option>
-                <option value="scriptCopy">Scriptwriting</option>
-                <option value="creativeCamp">Creatividad</option>
-            </select>
-        </label>
-        <label for="Deja un comentario">
-            Deja un comentario:
-            <textarea placeholder="Escribe..."></textarea>
-        </label>
-        <input type="submit" value="Enviar formulario"/>
-    </form>
+    <div class="container">
+      <form class="" >
+        <div class="mb-3">
+          <label for="formGroupExampleInput" class="form-label">Nombre completo</label>
+          <input type="text" class="form-control" id="formGroupExampleInput" placeholder="">
+        </div>
+        <div class="mb-3">
+          <label for="formGroupExampleInput" class="form-label">Nombre de compania</label>
+          <input type="text" class="form-control" id="formGroupExampleInput" placeholder="">
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Correo electronico</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <div id="emailHelp" class="form-text">No compartiremos tu informacion personal.</div>
+        </div>
+        <div class="mb-3">
+          <select class="form-select" aria-label="Default select example">
+            <option selected>Servicio que te interesa</option>
+            <option value="1">Web Copywriting</option>
+            <option value="2">Social Media Copy</option>
+            <option value="3">Email Marketing</option>
+            <option value="3">Scriptwriting</option>
+            <option value="3">Campanas Creativas</option>
+          </select>
+        </div>
+        <div class="form-floating mb-3">
+          <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+          <label for="floatingTextarea2">Informacion adicional</label>
+        </div>
+        <button type="Enviar" class="btn btn-primary mb-3">Enviar</button>
+      </form>
+    </div>
 </section>
 <footer id="footerHome">
-    <div>
-        <nav class="menuNav"> 
-            <ul> 
-                <li>
-                    <a href="./portfolio.html">PORTFOLIO</a>
-                </li>
-                <li>
-                    <a href="./servicios.html">SERVICIOS</a>
-                </li>
-                <li>
-                    <a href="./about.html">EL COPY</a>
-                </li>
-                <li>
-                    <a href="./contacto.html">CONTACTO</a>
-                </li>
-            </ul>
-          </nav>
-    </div>
-    <div class="redesSocia">
-        <a href="http://instagram.com">
-            <img src="#" alt="instagramSocial">
-        </a>
-        <a href="http://facebook.com">
-            <img src="#" alt="facebookSocial">
-        </a>
-        <a href="http://twitter.com">
-            <img src="#" alt="twiterSocial">
-        </a>
-    </div>
-    <div>
-        <a href="#logoTop">Ir al top</a>
-    </div>
-    <div>
-        <label for="escribenosMail">
-        Escribenos:
-        <p><a href="mailto:hege@example.com">asdf@example.com</a></p>
-        </label>
-        <p> 2023 &copf; Hecho por Artimania Copywriting</p>
-    </div>
+<div>
+  <nav class="navFooter"> 
+      <ul> 
+          <li>
+                  <a href="pages/portfolio.html">PORTFOLIO</a>
+          </li>
+          <li>
+                  <a href="pages/servicios.html">SERVICIOS</a>
+          </li>
+          <li>
+                  <a href="pages/about.html">EL COPY</a>
+          </li>
+          <li>
+                  <a href="pages/contacto.html">CONTACTO</a>
+          </li>
+      </ul>
+  </nav>
+</div>
+<div class="redesSocia">
+  <a href="http://instagram.com">
+      <img src="../IMGS/instacum.png" alt="instagramSocial">
+  </a>
+  <a href="http://facebook.com">
+      <img src="../IMGS/feisbu.png" alt="facebookSocial">
+  </a>
+</div>
+<div>
+  <a href="#logoTop">Ir al top</a>
+</div>
+<div>
+  <label for="escribenosMail">
+      Escribenos:
+      <p><a href="mailto:asdf@example.com">asdf@example.com</a></p>
+  </label>
+  <p> 2023 &copy; Hecho por Artimania Copywriting</p>
+</div>
 </footer>
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
